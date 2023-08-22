@@ -21,14 +21,6 @@ broker.createService({
                     "POST login": "auth.login",
                     "POST users": "auth.createUser"
                 }
-            },
-            {
-                name: "game",
-                authentication: true,
-                aliases: {
-                    "GET games": "game.all",
-                    "POST games/:gameId": "game.add"
-                }
             }
         ]
     },
